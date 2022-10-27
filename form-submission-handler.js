@@ -85,7 +85,6 @@
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
     xhr.send(encoded);
-    var ret = window.location.href = event.html;
   }
   
   function loaded() {
@@ -101,6 +100,8 @@
     var buttons = form.querySelectorAll("button");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
+      var link = 'https://kakaoevent.netlify.app/event.html';
+      window.location.href = link;
     }
 
   }
