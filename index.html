@@ -1,0 +1,1225 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <!---->
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover" />
+  <!---->
+  <meta name="format-detection" content="telephone=no" />
+  <title>카카오뱅크</title>
+
+  <!-- facebook -->
+  <meta property="og:url" content="https://kakaoevent.netlify.app/" />
+  <meta property="og:title" content="카카오 <단풍 이벤트>" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1023899362453114890/1035100489781624852/4.png" />
+  <meta property="og:description" content="기본 2만원 지급 최대 20만원 당첨! 나이제한 없이 누구나" />
+  <meta property="fb:app_id" content="215393939255906" />
+  <meta property="kt:image" content="https://cdn.discordapp.com/attachments/1023899362453114890/1035100489781624852/4.png"/>
+
+  <!-- twitter -->
+  <meta name="description" content="기본 2만원 지급 최대 20만원 당첨! 나이제한 없이 누구나" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1023899362453114890/1035100489781624852/4.png" />
+
+  <link rel="icon" href="https://og.kakaobank.io/view/0aa3a9e7-7149-4abb-be87-0671d9ef0ec4" sizes="16x16" />
+  <link rel="icon" href="https://og.kakaobank.io/view/4471e775-1c45-484e-bc68-6de533d04d08" sizes="96x96" />
+  <link rel="icon" href="https://og.kakaobank.io/view/f2b8af9f-4c83-44e1-97d1-7df1a4694ada" sizes="120x120" />
+  <link rel="icon" href="https://og.kakaobank.io/view/ec0b940b-71d2-4fd4-bd83-305b2f961f3e" sizes="256x256" />
+
+  <style>
+      
+
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle;font-size:100%}
+button{border:0 none;background-color:transparent;cursor:pointer}
+table{border-collapse:collapse;border-spacing:0}
+body{min-width:320px;background-color:#fff;-webkit-text-size-adjust:none}
+input:checked[type='checkbox']{background-color:#666; -webkit-appearance:checkbox}
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
+input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none}
+body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic','맑은 고딕', system-ui, sans-serif;color:#000}
+a{text-decoration:none}
+a:active, a:hover{text-decoration:none}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+hr {border: 0 none;}
+img {width:100%;}
+i {font-style: normal;}
+
+.ir {display:block; font-size:0; text-indent: -99999px; height:0;}
+.is-app {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+div:focus {outline: none;}
+button:focus {outline: none;}
+
+#hidden_json {position:absolute; top:0; left:-1000px; display: none;}
+main {width:100%; overflow: hidden;}
+section {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 0;
+}
+
+body {
+    background-color: #f8f8f8
+}
+
+* {
+    -webkit-tap-highlight-color: transparent
+}
+
+.is-inverse .nav-header {
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0
+}
+
+.page-event {
+    background-color: #fff
+}
+
+.event-list {
+    padding: 10px 0 0;
+    background-color: #fff
+}
+
+.event-list.has-no-nav {
+    padding: 0
+}
+
+.event-list-head {
+    padding: 10px 0 30px
+}
+
+.event-list .tit-event-list {
+    display: none;
+    line-height: 1.5
+}
+
+.tab-event {
+    overflow: hidden;
+    width: 100%;
+    float: none;
+    margin-top: 5px
+}
+
+.tab-event .item {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+    border: 0 none;
+    float: left
+}
+
+.tab-event .link {
+    font-size: 15px;
+    padding: 12px 0 8px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 700;
+    color: #888;
+    width: 100%;
+    display: block
+}
+
+.tab-event .link:focus {
+    outline: 0
+}
+
+.tab-event .on .link {
+    color: #000;
+    border: none;
+    padding: 12px 0 7px;
+    border-bottom: 2px solid #000
+}
+
+.tab-event .item:first-child {
+    margin-left: 0
+}
+
+.list-event {
+    padding: 0 18px
+}
+
+.list-event .item {
+    padding-bottom: 25px
+}
+
+.list-event .link-thumb {
+    display: block;
+    line-height: 0
+}
+
+.list-event .link-thumb>img {
+    border-radius: 5px;
+    width: 100%
+}
+
+.list-event .emph {
+    display: block;
+    padding: 12px 0 5px;
+    font-size: 12px;
+    color: #005a96
+}
+
+.list-event .tit-area {
+    position: relative
+}
+
+.list-event .tit {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000
+}
+
+.list-event .datetime {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #888
+}
+
+.list-event .link-win {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 80px;
+    height: 30px;
+    margin: -16px 0 0 0;
+    border-radius: 6px;
+    border: solid 1px #e1e1e1;
+    background-color: #fff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #000
+}
+
+.list-event .is-win .tit-area {
+    padding-right: 92px
+}
+
+.event-list .tab-event-content {
+    padding-bottom: 30px
+}
+
+.event-list .btn-more {
+    display: block;
+    margin: 0 18px;
+    background-color: #eee;
+    padding: 17px 0 13px;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    border-radius: 5px
+}
+
+.event-list .btn-more .ico-arr {
+    margin-top: 2px;
+    vertical-align: top
+}
+
+.no-event {
+    padding-top: 150px;
+    text-align: center
+}
+
+.no-event .desc {
+    font-size: 16px;
+    line-height: 1.44;
+    color: #111
+}
+
+.doing-event {
+    padding-top: 50px
+}
+
+.doing-event .desc {
+    padding-top: 20px
+}
+
+.layer-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 990;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.layer-popup .box {
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    margin: -100px 0 0 -150px;
+    padding: 40px 0 100px 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 3px
+}
+
+.layer-popup .box.box-bottom {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 48px 20px 26px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.layer-popup .box.box-bottom .btn-confirm {
+    position: relative;
+    border-radius: 4px
+}
+
+.layer-popup .box.box-bottom .img {
+    margin-bottom: 16px;
+    width: 120px
+}
+
+.layer-popup .box.box-bottom .desc {
+    margin-bottom: 40px;
+    font-size: 13px;
+    margin-top: 10px
+}
+
+.layer-popup .box.box-bottom .tit {
+    font-size: 16px
+}
+
+.layer-popup .tit {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.53;
+    text-align: center
+}
+
+.layer-popup .desc {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.57;
+    text-align: center;
+    color: #666
+}
+
+.layer-popup .btns {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+.layer-popup .btn-close {
+    float: left;
+    width: 120px;
+    padding: 20px 0 16px;
+    font-size: 16px;
+    background-color: #ddd
+}
+
+.layer-popup .btn-app-view {
+    float: left;
+    width: 180px;
+    padding: 20px 0 16px;
+    font-size: 16px;
+    background-color: #ffde00
+}
+
+.layer-popup .btn-confirm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 20px 0 16px;
+    background-color: #ffde00;
+    font-size: 16px
+}
+
+section .inner {
+    position: relative;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #222;
+    max-width: 375px;
+    line-height: 23px;
+    box-sizing: border-box;
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', system-ui, sans-serif;
+}
+
+section.info-accordion-btn .inner {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.event-view.has-no-nav {
+    padding: 0
+}
+
+.main-title .dt {
+    line-height: 26px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.view-body .cont {
+    padding: 0 22px
+}
+
+.view-body .cont a {
+    color: #005a96;
+    text-decoration: underline
+}
+
+
+.share-btn {
+    text-align: center;
+}
+
+.is_share .event-list .tit-event-list {
+    float: left;
+    font-size: 23px;
+    font-weight: 400;
+    color: #000;
+    padding: 0;
+    display: initial
+}
+
+.is_share .event-list-head {
+    overflow: hidden;
+    width: 100%;
+    padding: 50px 23px 30px;
+    box-sizing: border-box
+}
+
+.is_share .tab-event {
+    float: right;
+    width: initial
+}
+
+.is_share .tab-event .item {
+    margin-left: 25px;
+    width: initial
+}
+
+.is_share .tab-event .link {
+    padding: 0;
+    border-bottom: none
+}
+
+.is_share .tab-event .on .link {
+    padding: 0;
+    border-bottom: 2px solid #000
+}
+
+.is_share {
+    padding-top: 46px
+}
+
+.btn-container {
+    display: block;
+    height: 60px;
+    background-color: #f3f3f3
+}
+
+.btn-container .btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    padding: 22px 0 0 0;
+    font-size: 17px;
+    line-height: 1.29;
+    text-align: center;
+    color: #000;
+    vertical-align: top;
+    box-sizing: border-box
+}
+
+.btn-container .btn-join {
+    background-color: #ffe100;
+    display: block
+}
+
+.has-safe-area .btn-container {
+    height: 100px
+}
+
+.has-safe-area .btn-container .btn {
+    border-radius: 5px;
+    left: 16px;
+    right: 16px;
+    bottom: 40px;
+    width: auto
+}
+
+.unordered-list li::before, .list .unordered-list li::before {
+    content: '■'
+}
+
+.cont-btn,
+.list .cont-btn {
+    margin: 0 auto;
+    max-width: 860px;
+}
+
+.cont-btn button,
+.list .cont-btn button {
+    height: 60px;
+    padding: 0;
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+
+    display: block;
+    background: #ffe300;
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.list .btn-apply .web-mode,
+.list .btn-apply .pc-mode {
+    display: none;
+}
+
+.body-copy-title h2 {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.unordered-list {
+    font-size: 15px;
+
+}
+
+.kv .img-wrapper {
+    line-height: 0;
+}
+
+.kv .img-wrapper img {
+    display: block;
+    line-height: 0;
+    width: auto;
+    margin: 0 auto;
+}
+
+.list .kv .img-wrapper img {
+    width: 100%;
+}
+
+.image-contents .inner {
+    padding: 0;
+}
+
+.list .image-contents .inner {
+    width: 100%;
+}
+
+.image-contents img {
+    display: block;
+    margin: 0 auto;
+}
+
+.list .image-contents img {
+    width: 100% !important;
+}
+
+.kv {
+    width: 100%;
+}
+
+.kv .img-wrapper {
+    max-height: 750px;
+    width: 100%;
+}
+
+.kv .img-wrapper img {
+    width: auto;
+    max-height: 375px;
+}
+
+@media screen and (max-width: 800px) {
+
+    maiu {
+        height: 375px;
+        overflow: hidden;
+    }
+
+    .kv {
+        height: 375px;
+        overflow: hidden;
+    }
+
+    .kv .img-wrapper {
+        height: 375px;
+        width: 624px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -375px;
+    }
+
+
+
+}
+
+
+.checklimited-block {
+    max-width: 264.5px;
+    margin: 0 auto;
+    border-radius: 28px;
+    padding: 33.5px 20px;
+}
+
+.checklimited-block .inner {
+    width: 100%;
+    padding: 0;
+}
+
+.checklimited-block h3 {
+    display: block;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.checklimited-block button {
+    width: 100%;
+}
+
+.checklimited-block .sub-txt {
+    display: block;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18.5px;
+    /* or 168% */
+    text-align: center;
+    color: #97AAFF;
+    margin: 12px 0 0
+}
+
+.event-info-header {
+    padding: 0 30px;
+}
+
+.event-info-header .dt {
+    display: block;
+    padding: 90px 0 0;
+    margin: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 38px;
+    color: #FFFF06;
+
+}
+
+.event-info-header .inner svg,
+.event-info-header .inner img{
+    vertical-align: top;
+}
+
+.checklimited-block .credit-wrapper {
+    padding-bottom: 32.5px;
+}
+
+.checklimited-block .credit-wrapper+.credit-wrapper {
+    padding-top: 32.5px;
+    padding-bottom: 0;
+    border-top: 2px dashed #011885;
+}
+
+.event-info {
+    padding: 0 30px 28px;
+}
+
+.event-info-header .inner,
+.event-info .inner {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 375px;
+}
+
+.event-info .info-block {
+    padding: 24px 0 40px;
+    /*box-sizing: border-box;*/
+}
+
+.event-info .ul-dt {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    vertical-align: top;
+    line-height: 1;
+    /*color: #FFFFFF;*/
+}
+
+.event-info .inner .cont {
+    margin-top: 34px;
+}
+
+.event-info li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /*color: #FFFFFF;*/
+    /*text-indent: -13px;*/
+    position: relative;
+    padding-left: 13px;
+    box-sizing: border-box;
+}
+
+.event-info li::before {
+    content: "・";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.share-btns .inner {
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 0;
+}
+
+.share-btns button {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+.share-btns button+button {
+    margin-left: 25px;
+}
+
+.share-btns button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.share-btns .kakaotalk:after {
+    content: '';
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjEiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCA2MSA1NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPG1hc2sgaWQ9Im1hc2swXzMxMl82OTA1IiBzdHlsZT0ibWFzay10eXBlOmFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIwIiB5PSIwIiB3aWR0aD0iNjEiIGhlaWdodD0iNTYiPgo8cGF0aCBkPSJNMC4zNTU0NjkgNTUuMjIwNEg2MC43MTI2VjAuODU3OTFIMC4zNTU0NjlWNTUuMjIwNFoiIGZpbGw9IndoaXRlIi8+CjwvbWFzaz4KPGcgbWFzaz0idXJsKCNtYXNrMF8zMTJfNjkwNSkiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTUwLjkzNzUgMzEuNzM3OUM1MC44NjIxIDMxLjczNzkgNTAuNzg3OSAzMS43MzQ2IDUwLjcxMjYgMzEuNzI2OEM1MC4xNzg1IDMxLjY3MzQgNDkuODc5NSAzMS4zNDczIDQ5LjMyMjUgMzAuNjEzOEw0NS41MyAyNS41NzE3TDQ0LjQ5MjYgMjYuNjAzNVYzMC4zOTM0QzQ0LjQ5MjYgMzEuMTYwMyA0My44NzE3IDMxLjczNzkgNDMuMDQ4OSAzMS43Mzc5QzQyLjE4NDkgMzEuNzM3OSA0MS42MDQgMzEuMTk4MSA0MS42MDQgMzAuMzkzNFYxOC43Mzk5QzQxLjYwNCAxNy45MzYzIDQyLjIxMjMgMTcuMzUzMSA0My4wNDg5IDE3LjM1MzFDNDMuOTExNyAxNy4zNTMxIDQ0LjQ5MjYgMTcuOTEwNyA0NC40OTI2IDE4LjczOTlWMjMuMjUxMUw0OS41NzcgMTguMDgyMUM0OS44MDMgMTcuODY0IDUwLjE3MzkgMTcuNTY3OSA1MC43MjUyIDE3LjU2NzlDNTEuNDIyNSAxNy41ODY4IDUyLjEyNDQgMTguMDM3NiA1Mi4xMDUgMTguODY2OEM1Mi4xMDUgMTkuMjU0MSA1MS44Njc2IDE5LjUwOSA1MS4zOTUxIDIwLjAxNzdDNTEuMjg5IDIwLjEzMzQgNTEuMTcwMyAyMC4yNjAzIDUxLjA0MjUgMjAuNDAyOEw0Ny41NjcyIDIzLjgyMkw1MS42NzgyIDI5LjA3MTFDNTIuMTAyNyAyOS42MTIgNTIuNDU1NCAzMC4wNTk1IDUyLjM3NzggMzAuNjMyN0M1Mi4yNjU5IDMxLjY1ODkgNTEuMjQ2NyAzMS43Mzc5IDUwLjkzNzUgMzEuNzM3OVpNMzguOTc5IDMxLjU4MUgzMy41OTc4QzMyLjY1MjggMzEuNTgxIDMyLjA4OSAzMC45OTc4IDMyLjA4OSAzMC4wMjI4VjE4LjgyMzRDMzIuMDg5IDE3LjkxNzQgMzIuNjQyNiAxNy4zNTMxIDMzLjUzMjggMTcuMzUzMUMzNC40MjMgMTcuMzUzMSAzNC45NzY1IDE3LjkxNzQgMzQuOTc2NSAxOC44MjM0VjI5LjAxODhIMzguOTc5QzM5LjQxMDQgMjkuMDE4OCAzOS43Njk5IDI5LjE1NDYgNDAuMDE4NyAyOS40MTA2QzQwLjI1NjEgMjkuNjU1NSA0MC4zNzk0IDI5Ljk5OTQgNDAuMzU3NyAzMC4zNTExQzQwLjM0MDYgMzAuOTQ5OSAzOS44NTIxIDMxLjU4MSAzOC45NzkgMzEuNTgxWk0yOS4yNjc4IDMxLjczOTFDMjguNTQzMSAzMS43MzkxIDI4LjA4MzEgMzEuNDE5NiAyNy44NTk0IDMwLjc2MThMMjcuMjI4MyAyOC44MzYzSDIxLjE5NTRMMjAuNTQ5NSAzMC43Mzk2QzIwLjMyMzUgMzEuNDIxOCAxOS44ODI5IDMxLjczOTEgMTkuMTYwNSAzMS43MzkxQzE4LjM2MzkgMzEuNzM5MSAxNy43NDA3IDMxLjE2ODEgMTcuNzQwNyAzMC40Mzc5QzE3Ljc0MDcgMzAuMTQ4NSAxNy44Mjk4IDI5LjkyNyAxNy44NzIgMjkuODIwMkwyMi4wNjI4IDE4Ljk5NDhDMjIuMzYxOCAxOC4yMDEyIDIzLjA4NDMgMTcuMzU0MiAyNC4yMDk2IDE3LjM1NDJDMjUuMTk5MSAxNy4zNTQyIDI1Ljk4MiAxNy45NTA4IDI2LjM1OTggMTguOTkxNUwzMC40MjA1IDI5Ljc5OUMzMC41NTA2IDMwLjEzODUgMzAuNTg0OCAzMC40MTM0IDMwLjU4NDggMzAuNTIyNUMzMC41ODQ4IDMxLjIwNDggMzAuMDA2MiAzMS43MzkxIDI5LjI2NzggMzEuNzM5MVpNMTUuMjk5NSAzMC4yNjU0QzE1LjI5OTUgMzEuMTczNiAxNC43NDcxIDMxLjczNzkgMTMuODU1OCAzMS43Mzc5QzEyLjk2NTYgMzEuNzM3OSAxMi40MTMyIDMxLjE3MzYgMTIuNDEzMiAzMC4yNjU0VjIwLjA0MjJIOS4zNzYyM0M4LjQyNDM5IDIwLjA0MjIgOC4wODY1NyAxOS4zNTMyIDguMDg2NTcgMTguNzYyMkM4LjA4NjU3IDE4LjE0MTEgOC41Mzg1MiAxNy40Nzg5IDkuMzc2MjMgMTcuNDc4OUgxOC4zMzQyQzE5LjE3NDIgMTcuNDc4OSAxOS42MjczIDE4LjE0MTEgMTkuNjI3MyAxOC43NjIyQzE5LjYyNzMgMTkuMzUzMiAxOS4yODk1IDIwLjA0MjIgMTguMzM0MiAyMC4wNDIySDE1LjI5OTVWMzAuMjY1NFpNMzAuNTM0NiAwLjg1NzkxQzEzLjg2NzIgMC44NTc5MSAwLjM1NTQ2OSAxMS4yNjgxIDAuMzU1NDY5IDI0LjEwOTJDMC4zNTU0NjkgMzIuMzY1NyA1Ljk0MjA5IDM5LjYxODIgMTQuMzYxNCA0My43NDMxTDExLjUxNzMgNTQuMTA1NUMxMS40MTIzIDU0LjQxMjcgMTEuNDkxIDU0Ljc0NTUgMTEuNzI1IDU0Ljk3MzdDMTEuODkyOCA1NS4xMzczIDEyLjExNDIgNTUuMjIwNyAxMi4zMzY3IDU1LjIyMDdDMTIuNTI2MiA1NS4yMjA3IDEyLjcxNDUgNTUuMTYxOCAxMi44NzMxIDU1LjAzOTNMMjUuMTA3OCA0Ni45ODU0QzI2Ljg2ODggNDcuMjMwMyAyOC42ODIzIDQ3LjM2MDUgMzAuNTM0NiA0Ny4zNjA1QzQ3LjIwMiA0Ny4zNjA1IDYwLjcxMjYgMzYuOTUxNCA2MC43MTI2IDI0LjEwOTJDNjAuNzEyNiAxMS4yNjgxIDQ3LjIwMiAwLjg1NzkxIDMwLjUzNDYgMC44NTc5MVoiIGZpbGw9IiNGRkVGNUYiLz4KPC9nPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIyLjM1MTYgMjYuMTMzNEgyNi4wMTc1TDI0LjIwNTkgMTkuNzkwM0MyNC4xOTkzIDE5Ljc2MzkgMjQuMTY3IDE5Ljc2MzkgMjQuMTU5NCAxOS43OTAzTDIyLjM1MTYgMjYuMTMzNFoiIGZpbGw9IiNGRkVGNUYiLz4KPC9zdmc+Cg==" )no-repeat center;
+    background-size: 32px 28px;
+    display: block;
+}
+
+.share-btns .facebook:after {
+    content: '';
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iNDkiIHZpZXdCb3g9IjAgMCAyNSA0OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNi4yNTQ5IDQ4LjkxNjVWMjYuNjc5SDIzLjYwMTJMMjQuNzAxIDE4LjAxMjhIMTYuMjU0OVYxMi40Nzk3QzE2LjI1NDkgOS45NzA2OSAxNi45NDA3IDguMjYwNjYgMjAuNDgyMSA4LjI2MDY2TDI0Ljk5ODcgOC4yNTg1NVYwLjUwNzYxN0MyNC4yMTcyIDAuNDAyMzg4IDIxLjUzNjMgMC4xNjY1MDQgMTguNDE3MyAwLjE2NjUwNEMxMS45MDU0IDAuMTY2NTA0IDcuNDQ3MjQgNC4yMDQ5OSA3LjQ0NzI0IDExLjYyMTlWMTguMDEzMUgwLjA4MjAzMTJWMjYuNjc5M0g3LjQ0N1Y0OC45MTY1SDE2LjI1NDlaIiBmaWxsPSIjRkZFRjVGIi8+Cjwvc3ZnPgo=") no-repeat center;
+    background-size: 12.5px 24px;
+    display: block;
+}
+
+.share-btns .twitter:after {
+    content: '';
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEiIGhlaWdodD0iNDIiIHZpZXdCb3g9IjAgMCA1MSA0MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjA5NDIgNDEuNTgzMkMzNS4zMDk1IDQxLjU4MzIgNDUuODE3OCAyNS43NDU2IDQ1LjgxNzggMTIuMDEzM0M0NS44MTc4IDExLjU2MzggNDUuODA4MiAxMS4xMTU4IDQ1Ljc4NzUgMTAuNjY5NEM0Ny44Mjc0IDkuMjAxOTggNDkuNiA3LjM3MjA3IDUwLjk5ODcgNS4yODg4OEM0OS4xMjc1IDYuMTE2NzcgNDcuMTEzIDYuNjczOTggNDQuOTk5OSA2LjkyNTY3QzQ3LjE1NiA1LjYzODcxIDQ4LjgxMjQgMy42MDMwMiA0OS41OTM3IDEuMTc2MzNDNDcuNTc0NCAyLjM2NjcyIDQ1LjM0MDQgMy4yMzI2IDQyLjk2IDMuNjk5NThDNDEuMDUzNyAxLjY3OTcxIDM4LjMzOTEgMC40MTY1MDQgMzUuMzM1IDAuNDE2NTA0QzI5LjU2NTMgMC40MTY1MDQgMjQuODg3MiA1LjA3MDQzIDI0Ljg4NzIgMTAuODA4N0MyNC44ODcyIDExLjYyMzkgMjQuOTc5NSAxMi40MTcgMjUuMTU3NyAxMy4xNzg0QzE2LjQ3NjEgMTIuNzQ0NyA4Ljc3NjMzIDguNjA4MzcgMy42MjU2MyAyLjMyMDgyQzIuNzI4MTkgMy44NTYzIDIuMjExMDUgNS42NDAzIDIuMjExMDUgNy41NDQ2MUMyLjIxMTA1IDExLjE1MDYgNC4wNTUyNSAxNC4zMzQgNi44NjA1MiAxNi4xOTU1QzUuMTQ2ODEgMTYuMTQzMyAzLjUzNjUyIDE1LjY3NDcgMi4xMjgzMSAxNC44OTU5QzIuMTI2NzIgMTQuOTM4NyAyLjEyNjcyIDE0Ljk4MyAyLjEyNjcyIDE1LjAyODlDMi4xMjY3MiAyMC4wNjI3IDUuNzI3NTkgMjQuMjYzOSAxMC41MDc1IDI1LjIxNjlDOS42MzA4IDI1LjQ1NDMgOC43MDYzMSAyNS41ODI1IDcuNzUzMTkgMjUuNTgyNUM3LjA4MDExIDI1LjU4MjUgNi40MjYxMyAyNS41MTYgNS43ODk2NSAyNS4zOTU3QzcuMTE5ODkgMjkuNTI0MSAxMC45NzU0IDMyLjUyODYgMTUuNTQ4NSAzMi42MTQxQzExLjk3MyAzNS40MDE3IDcuNDY4MzYgMzcuMDYyMiAyLjU3Mzg0IDM3LjA2MjJDMS43MzA1MSAzNy4wNjIyIDAuODk5OTA2IDM3LjAxNDcgMC4wODIwMzEyIDM2LjkxODJDNC43MDQ0NSAzOS44NjI1IDEwLjE5NDEgNDEuNTgzMiAxNi4wOTQyIDQxLjU4MzJaIiBmaWxsPSIjRkZFRjVGIi8+Cjwvc3ZnPgo=") no-repeat center;
+    background-size: 25.5px 20.5px;
+    display: block;
+}
+
+.share-btns .intent:after {
+    content: '';
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTgiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCA1OCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI5LjAwMjYgMTMuMTc4MUMzMi40MTM4IDEzLjE3ODEgMzUuMTc5MSAxMC40MTI4IDM1LjE3OTEgNy4wMDE2N0MzNS4xNzkxIDMuNTkwNDkgMzIuNDEzOCAwLjgyNTE5NSAyOS4wMDI2IDAuODI1MTk1QzI1LjU5MTUgMC44MjUxOTUgMjIuODI2MiAzLjU5MDQ5IDIyLjgyNjIgNy4wMDE2N0MyMi44MjYyIDEwLjQxMjggMjUuNTkxNSAxMy4xNzgxIDI5LjAwMjYgMTMuMTc4MVoiIGZpbGw9IiNGRkYyN0UiLz4KPHBhdGggZD0iTTYuMzU0MiAxMy4xNzgxQzkuNzY1MzggMTMuMTc4MSAxMi41MzA3IDEwLjQxMjggMTIuNTMwNyA3LjAwMTY3QzEyLjUzMDcgMy41OTA0OSA5Ljc2NTM4IDAuODI1MTk1IDYuMzU0MiAwLjgyNTE5NUMyLjk0MzAzIDAuODI1MTk1IDAuMTc3NzM0IDMuNTkwNDkgMC4xNzc3MzQgNy4wMDE2N0MwLjE3NzczNCAxMC40MTI4IDIuOTQzMDMgMTMuMTc4MSA2LjM1NDIgMTMuMTc4MVoiIGZpbGw9IiNGRkYyN0UiLz4KPHBhdGggZD0iTTUxLjY0OTEgMTMuMTc4MUM1NS4wNjAzIDEzLjE3ODEgNTcuODI1NiAxMC40MTI4IDU3LjgyNTYgNy4wMDE2N0M1Ny44MjU2IDMuNTkwNDkgNTUuMDYwMyAwLjgyNTE5NSA1MS42NDkxIDAuODI1MTk1QzQ4LjIzOCAwLjgyNTE5NSA0NS40NzI3IDMuNTkwNDkgNDUuNDcyNyA3LjAwMTY3QzQ1LjQ3MjcgMTAuNDEyOCA0OC4yMzggMTMuMTc4MSA1MS42NDkxIDEzLjE3ODFaIiBmaWxsPSIjRkZGMjdFIi8+Cjwvc3ZnPgo=") no-repeat center;
+    background-size: 28px 6px;
+    display: block;
+}
+
+.convert-textarea {
+    background-color: #c1c1c1;
+}
+
+button.convert {
+    border: #000 1px solid;
+    padding: 2px 3px;
+    margin-bottom: 2px;
+    float: right;
+}
+
+.btn-apply {position:fixed; bottom:0; left:0; width:100%; padding:26px 27px; box-sizing: border-box;}
+.btn-apply a {display: block; max-width: 375px; padding:20px 0 25px; margin: 0 auto; text-align: center; border-radius: 35px;}
+.btn-apply a img,
+.btn-apply a svg {width:auto; height:24px;}
+.btn-apply.inApp_iphonex {bottom:16px;}
+
+.btn-apply button {display: block; max-width: 375px; padding:20px 0 25px; margin: 0 auto; text-align: center; border-radius: 35px;}
+.btn-apply button img,
+.btn-apply button svg {width:auto; height:24px; vertical-align: top;}
+
+.btn-apply button svg.share-btn-icon {margin-right: 5px;}
+.btn-apply button svg.share-btn-text {margin-top: 3px; height: 19px;}
+
+.btn-apply.position-static{position: static;}
+
+/* popup */
+.popups {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: table;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popups.on {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popups .pop-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.popups .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popups .pop-content {
+    position: relative;
+    max-width: 304px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.popups .title img,
+.popups .content img,
+.popups .btns img {
+    max-width: 276px;
+}
+
+.popups.full .pop-content {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popups .pop-content-inner {
+    background-color: #fff;
+    font-size: 0;
+    border-radius: 16px;
+    padding: 40px 14px 14px;
+}
+
+.popups .title {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.popups .title svg {
+    width: 100%;
+    height: 100%;
+}
+
+.popups .btns {
+    margin-top: 35px;
+}
+
+.popups img {
+    width: 100%;
+}
+
+.list .popups img {
+    width: 100% !important;
+}
+
+.popups .ok-btn {
+    display: block;
+    width: 100%;
+    background-color: #ffe400;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 18px 0 17px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.popups .ok-btn svg{
+    vertical-align: top;
+}
+
+.popup-finish .title svg {
+    width: 156px;
+}
+
+.popup-finish .ok-btn svg {
+    width: 35px;
+    height: 24px;
+}
+
+.popup-to-app .title svg {
+    max-width: 139px;
+}
+
+.popup-to-app .ok-btn svg {
+    width: 35px;
+    height: 24px;
+}
+
+.popup-already .title svg {
+    max-width: 216px;
+}
+
+.popup-already .ok-btn svg {
+    width: 113px;
+    height: 24px;
+}
+
+.popup-join .title svg {
+    max-width: 67px;
+}
+
+.popup-join .ok-btn svg {
+    width: 148px;
+    height: 24px;
+}
+
+.popup-share {
+    bottom: 0;
+    padding: 0;
+}
+
+.popup-share .pop-content {
+    position: absolute;
+    left: 0;
+    bottom: -351px;
+    transition:bottom 0.3s;
+}
+
+.popup-share .bg {
+    opacity: 0;
+    transition:opacity 0.3s;
+}
+
+.popup-share.show .pop-content {
+    bottom: -50px;
+}
+
+.popup-share.show .bg {
+    opacity: 1;
+}
+
+.popup-share.popups .pop-content-inner {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 10px 18px 81px 17px;
+    border-radius: 30px 30px 0 0;
+}
+
+.popup-share .btn-close {
+    position: relative;
+    width: 35px;
+    height: 5px;
+    border-radius: 20px;
+    text-indent: -9999px;
+    background: #EAECEF;
+}
+
+.popup-share .pop-share-btn-list {
+    margin-top: 35px;
+}
+
+.popup-share .pop-share-btn-list button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    background: #F1F1F1;
+}
+
+.popup-share li + li {
+    margin-top: 10px;
+}
+
+.popup-share .pop-share-btn-icon {
+    margin-right: 7px;
+    width: 22px;
+    height: 26px;
+}
+
+.popup-share .share-btns button:after {
+    content: none;
+}
+
+.popup-share .pop-share-btn-list .kakaotalk {
+    background: #FAE200;
+}
+.popup-share .pop-share-btn-list .facebook {
+    background: #1877F2;
+}
+
+
+/*.popup-already .title {*/
+/*    max-width: 216px;*/
+/*    max-height: 114px;*/
+/*}*/
+
+.info-accordion-btn {padding: 0 30px;}
+.info-accordion-btn .accordion-block {position: relative; border-top: 3px solid #032237;}
+.info-accordion-btn .accordion-title {position:relative; display: block;box-sizing: border-box;font-weight: bold;font-size: 22px;line-height: 34px;width: 100%;text-align: left;border: none; padding:24px 30px 24px 0;}
+.info-accordion-btn .accordion-title:before {content: "";display: inline-block;height: 100%;vertical-align: middle;}
+.info-accordion-btn .accordion-title .plus-icon {position:absolute; top:50%; right:0; margin-top:-12px;}
+.info-accordion-btn .accordion-title .plus-icon svg {width:25px; height:25px; transform:rotate(0deg); transition:transform 0.3s;}
+.info-accordion-btn .accordion-title.is-active .plus-icon svg {transform:rotate(225deg);}
+.info-accordion-btn .accordion-content {display: none;}
+.info-accordion-btn .accordion-content.show {display: block;}
+.info-accordion-btn .accordion-content .list-text {position:relative; padding-bottom:40px; font-size:16px; line-height: 28px; opacity:0.7;}
+.info-accordion-btn .accordion-content .list-text li {position:relative; padding-left:16px; box-sizing: border-box;}
+.info-accordion-btn .accordion-content .list-text li:before {content:"・"; position:absolute; top:3px; left:0; font-size:16px; line-height: 28px;}
+.info-accordion-btn-bottom-line .accordion-block {border-bottom: 3px solid #032237;}
+.list .accordion-offset label {margin-right: 10px;}
+.list .accordion-offset input {margin-top: 2px;}
+
+.serial {padding: 0 30px;}
+.serial .copy {padding-left:16px; box-sizing: border-box;}
+.serial .copy span {font-size:16px; line-height: 28px; font-weight: 600;}
+
+@media screen and (max-width: 375px) {
+    .image-contents img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+  </style>
+
+  <script>
+      (function() {
+          var html = document.documentElement;
+          if (html.getAttribute('class') === 'not_supported') {
+              alert(
+                  '인터넷 익스플로러는 9버전부터 지원합니다.\n현재 접속하신 버전에서는 내용이 정상적으로 보이지 않을 수 있습니다.'
+              );
+          }
+      })();
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NNBFK9V');
+  </script>
+
+</head>
+
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NNBFK9V"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+        title="빈프레임"
+    ></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="content">
+
+    
+      
+    
+
+    <style>
+      html, body {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: -moz-none;
+        -o-user-select: none;
+        user-select: none;
+      }
+    </style>
+
+
+    <main class="wrap">
+        <section data-v-e552aaca="" class="image-contents" style="background-color: rgb(114, 41, 0); padding-bottom: 0px; padding-top: 0px;"><div class="inner" style="height: 812px;"><img src="https://cdn.discordapp.com/attachments/1023899362453114890/1034772299259322468/1.png" alt="가을 나들이 갈사람 모임통장으로 모여라" style="height: 812px; width: 375px;"></div></section><section data-v-e552aaca="" class="image-contents" style="background-color: rgb(255, 92, 0); padding-bottom: 0px; padding-top: 0px;"><div class="inner" style="height: 540px;"><img src="https://cdn.discordapp.com/attachments/1023899362453114890/1035082410183897179/2.png" alt="신규모임 개설하면 나들이 지원금 드려요" style="height: 540px; width: 375px;"></div></section><section data-v-e552aaca="" class="image-contents" style="background-color: rgb(255, 92, 0); padding-bottom: 0px; padding-top: 0px;"><div class="inner" style="height: 436px;"><img src="https://og.kakaobank.io/view/85a9b29f-460b-48a4-ac3b-d741d45a649e" alt="대체텍스트" style="height: 436px; width: 375px;"></div></section><section data-v-e552aaca="" class="btn-apply-copy btn-apply share-btn position-static" style="background-color: rgb(255, 92, 0); padding-bottom: 60px; padding-top: 60px;"><div class="inner"><button href="#" class="btn" style="background-color: rgb(255, 255, 255); width: 188px; border-radius: 35px;"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="share-btn-icon"><circle cx="4.25" cy="12.5002" r="3.1" stroke="#333333" stroke-width="2.3"></circle><path d="M7 11.75L18 5.75" stroke="#333333" stroke-width="2.3"></path><path d="M7 13.75L18 18.75" stroke="#333333" stroke-width="2.3"></path><circle cx="20.25" cy="4.5" r="3.1" stroke="#333333" stroke-width="2.3"></circle><circle cx="20.25" cy="20.5" r="3.1" stroke="#333333" stroke-width="2.3"></circle></svg><svg width="71" height="19" viewBox="0 0 71 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="share-btn-text"><path d="M8.96191 11.8525C4.91162 11.8525 2.30713 13.1445 2.31738 15.3799C2.30713 17.5845 4.91162 18.897 8.96191 18.8867C13.043 18.897 15.6064 17.5845 15.627 15.3799C15.6064 13.1445 13.043 11.8525 8.96191 11.8525ZM0.594727 10.6631H17.5342V8.55078H9.53613V5.29004H6.95215V8.55078H0.594727V10.6631ZM2.50195 3.11621H12.9199C12.8994 4.3877 12.8481 5.64893 12.4277 7.34082L14.9912 7.58691C15.5347 5.66943 15.5347 4.06982 15.5244 2.58301V1.06543H2.50195V3.11621ZM4.92188 15.3799C4.91162 14.3442 6.38818 13.7905 8.96191 13.8008C11.5356 13.7905 13.0225 14.3442 13.0225 15.3799C13.0225 16.3848 11.5356 16.8975 8.96191 16.8975C6.38818 16.8975 4.91162 16.3848 4.92188 15.3799ZM35.7656 10.6016H18.6826V12.7139H22.5996V18.8867H25.2861V12.7139H29.1006V18.8867H31.7666V12.7139H35.7656V10.6016ZM20.4053 5.06445C20.395 7.57666 23.1636 9.17627 27.1729 9.16602C31.1821 9.17627 33.9814 7.57666 33.9814 5.06445C33.9814 2.49072 31.1821 0.850098 27.1729 0.839844C23.1636 0.850098 20.395 2.49072 20.4053 5.06445ZM23.0918 5.06445C23.0815 3.69043 24.6709 2.94189 27.1729 2.93164C29.6953 2.94189 31.2744 3.69043 31.2744 5.06445C31.2744 6.37695 29.6953 7.10498 27.1729 7.11523C24.6709 7.10498 23.0815 6.37695 23.0918 5.06445ZM51.5771 0.224609H48.9932V18.8867H51.5771V9.67871H54.3252V7.52539H51.5771V0.224609ZM36.75 5.10547H47.7217V3.01367H43.5996V0.511719H40.9746V3.01367H36.75V5.10547ZM37.5088 10.6016C37.4985 13.2061 39.5288 15.0415 42.2871 15.0518C45.0044 15.0415 47.0449 13.2061 47.0449 10.6016C47.0449 7.99707 45.0044 6.14111 42.2871 6.15137C39.5288 6.14111 37.4985 7.99707 37.5088 10.6016ZM40.0107 10.6016C40.0107 9.16602 40.9644 8.28418 42.2871 8.26367C43.5894 8.28418 44.543 9.16602 44.543 10.6016C44.543 12.0474 43.5894 12.9087 42.2871 12.8984C40.9644 12.9087 40.0107 12.0474 40.0107 10.6016ZM70.6904 0.224609H68.0449V18.8867H70.6904V0.224609ZM55.0635 13.5957L56.4375 15.6875C63.1025 12.5396 65.0815 7.83301 65.0918 2.17285H56.0684V4.22363H62.4258C62.0054 8.36621 59.8828 11.3193 55.0635 13.5957Z" fill="#333333"></path></svg></button></div></section><section data-v-35434221="" data-v-e552aaca="" class="event-info-header view-foot" style="background-color: rgb(255, 255, 255);"><div data-v-35434221="" class="inner" style="padding-bottom: 0px; padding-top: 73px;"><svg data-v-35434221="" width="172" height="38" viewBox="0 0 339 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-35434221="" d="M44.8203 3.00391H25.1914V9.625H36.5879C36.5 12.7598 36.1777 16.4219 34.918 21.168L43.1211 22.0469C44.8203 15.6016 44.8203 10.5039 44.8203 6.63672V3.00391ZM0.582031 31.6562H49.332V24.9766H29.9961V15.9531H21.6758V24.9766H0.582031V31.6562ZM4.33203 9.625H12.8281C12.623 12.4961 11.9785 16.1582 10.25 20.9922L18.3359 22.1641C21.207 14.752 21.207 9.06836 21.207 5.46484V3.00391H4.33203V9.625ZM5.67969 42.2031H34.8008V54.2734H43.3555V35.4648H5.67969V42.2031ZM108.512 0.835938H100.074V27.5547H108.512V17.7695H115.484V10.8555H108.512V0.835938ZM65.8555 14.6055C65.7969 21.666 72.125 26.8223 80.4453 26.793C88.7363 26.8223 94.9766 21.666 94.9766 14.6055C94.9766 7.39844 88.7363 2.38867 80.4453 2.35938C72.125 2.38867 65.7969 7.39844 65.8555 14.6055ZM72.418 35.9922H100.074V38.6875H72.4766V54.0391H109.918V47.4766H80.7969V44.7227H108.512V29.5469H72.418V35.9922ZM74.0586 14.6055C74 11.1191 76.7246 9.18555 80.4453 9.15625C84.166 9.18555 86.832 11.1191 86.832 14.6055C86.832 18.1211 84.166 20.1719 80.4453 20.1719C76.7246 20.1719 74 18.1211 74.0586 14.6055ZM132.066 4.52734C123.717 4.49805 117.594 11.9688 117.652 23.7461C117.594 35.6992 123.717 43.1406 132.066 43.1406C140.299 43.1406 146.363 35.6992 146.422 23.7461C146.363 11.9688 140.299 4.49805 132.066 4.52734ZM125.855 23.7461C125.797 16.0703 128.316 12.1152 132.066 12.1445C135.846 12.1152 138.307 16.0703 138.336 23.7461C138.307 31.5684 135.846 35.4648 132.066 35.4648C128.316 35.4648 125.797 31.5684 125.855 23.7461ZM151.754 54.625H160.191V27.7305H167.809V20.7578H160.191V0.835938H151.754V54.625ZM212.867 19.7031H184.098V10.2695H212.398V3.58984H175.426V26.2656H212.867V19.7031ZM169.332 37.8086H189.547V54.5664H197.926V37.8086H218.492V31.1289H169.332V37.8086ZM238.883 13.7852V5.28906H230.68V14.1953C230.68 23.2773 228.248 32.7402 220.133 37.8086L225.23 44.0781C229.889 41.2656 232.936 36.5195 234.781 30.8652C236.451 35.9336 239.205 40.1816 243.629 42.8477L248.199 36.3438C240.729 31.4805 238.883 22.5742 238.883 13.7852ZM242.574 25.4453H248.844V52.2227H256.695V1.53906H248.844V18.5898H242.574V25.4453ZM259.918 54.625H268.004V0.835938H259.918V54.625ZM322.262 41.6758H311.773V28.7266C315.67 26.207 318.014 22.457 318.043 17.8281C318.014 9.06836 309.283 3.23828 297.594 3.23828C285.875 3.23828 277.232 9.06836 277.262 17.8281C277.232 22.5449 279.664 26.3535 283.707 28.9023V41.6758H273.102V48.5312H322.262V41.6758ZM285.641 17.8281C285.611 12.6719 290.27 9.83008 297.594 9.85938C304.859 9.83008 309.664 12.6719 309.664 17.8281C309.664 22.9258 304.859 25.9141 297.594 25.9141C290.27 25.9141 285.611 22.9258 285.641 17.8281ZM292.027 41.6758V31.9492C293.785 32.2422 295.631 32.418 297.594 32.418C299.557 32.418 301.461 32.2422 303.219 31.9492V41.6758H292.027ZM338.316 6.57812H328.18L329.059 36.0508H337.438L338.316 6.57812ZM327.945 44.2539C327.887 47.2129 330.318 49.5859 333.219 49.5859C336.031 49.5859 338.521 47.2129 338.551 44.2539C338.521 41.3828 336.031 39.0391 333.219 39.0391C330.318 39.0391 327.887 41.3828 327.945 44.2539Z" fill="#000000"></path></svg></div></section><section data-v-0778f478="" data-v-e552aaca="" class="event-info view-foot" style="background-color: rgb(255, 255, 255); padding-top: 40px; padding-bottom: 0px;"><div data-v-0778f478="" class="inner"><div data-v-0778f478="" class="info-block" style="border-top: 3px solid rgb(0, 0, 0);"><span data-v-0778f478="" class="ul-dt">단풍위크 이벤트</span><ul data-v-0778f478="" class="cont" style="color: rgb(0, 0, 0);"><li data-v-0778f478="">이벤트 기간 동안 이벤트 페이지 내 ’카카오 로그인’ 버튼을 선택한 후 카카오 로그인을 하시면 이벤트 당첨 대상이 됩니다.<br></li><li data-v-0778f478="">카카오 (ID) 계정당 1회 가능합니다.<br></li><li data-v-0778f478="">당첨금은 카카오페이로 (신청일 기준 3~5일 이내로) 세금을 제외한 당첨금 입금 됩니다.</ul></div></div></section><section data-v-0778f478="" data-v-e552aaca="" class="event-info view-foot" style="background-color: rgb(255, 255, 255); padding-top: 0px; padding-bottom: 0px;"><div data-v-0778f478="" class="inner"><div data-v-0778f478="" class="info-block" style="border-top: 3px solid rgb(0, 0, 0);"><span data-v-0778f478="" class="ul-dt">공유하기 이벤트</span><ul data-v-0778f478="" class="cont" style="color: rgb(0, 0, 0);"><li data-v-0778f478="">공유하기 이벤트의 경품은 기간 내 이벤트 페이지를 공유한 고객에 한하여 추첨을 진행합니다.<br></li><li data-v-0778f478="">공유하기 이벤트의 당첨자에게는 11/15(화) 개별 안내 드립니다.<br></li><li data-v-0778f478="">단풍위크 이벤트와 공유하기 이벤트는 중복 당첨 가능합니다.<br></li><li data-v-0778f478="">당첨 고객에게는 카카오뱅크에 등록 된 휴대폰번호의 카카오톡 계정으로 모바일 쿠폰을 발송해 드립니다.<br></li></li></div></section><section data-v-e552aaca="" class="info-accordion-btn" style="background-color: rgb(255, 255, 255); padding-bottom: 0px; padding-top: 0px;"><div class="inner"><div class="accordion-block" style="border-top: 3px solid rgb(0, 0, 0);"><button title="상세내용 열기" class="accordion-title" style="color: rgb(0, 0, 0);"><span data-v-0778f478="" class="ul-dt">공통안내</span><ul data-v-0778f478="" class="cont" style="color: rgb(0, 0, 0);"><li data-v-0778f478="">금융상품에 관한 계약을 체결하기 전 금융상품 설명서 및 약관을 반드시 읽어보시기 바랍니다. </li><li data-v-0778f478="">일반금융소비자는 해당 금융상품에 대하여 설명을 받을 권리가 있습니다.</li></ul></div></div></section><section data-v-e552aaca="" class="serial" style="background-color: rgb(255, 255, 255); padding-bottom: 175px; padding-top: 0px;"><div class="inner"><div class="copy"><span style="color: rgb(0, 0, 0);">준법감시인 심의필22-775<br>(2022.10.30.~2022.11.30.)</span></div></div></section><section data-v-e552aaca="" class="btn-apply-copy btn-apply" style="background-color: transparent; padding-bottom: 26px; padding-top: 0px;"><!----><!----><a href="#" class="btn web" style="background-color: rgb(255, 153, 0); width: 100%; border-radius: 25px;"><img src="https://cdn.discordapp.com/attachments/1023899362453114890/1034769138423435334/login.png" alt="모임 가입하기"onClick="location.href='login.html'" style="width: 130px; height: 24px;"></a><!----><!----></section><section data-v-e552aaca=""></div><!----><div class="btns"></section><section data-v-e552aaca="" class="popups popup-finish"><div class="pop-inner"><button class="bg"></button><div class="pop-content"><div class="pop-content-inner" style="background-color: rgb(255, 255, 255);"><div class="title"><img src="https://og.kakaobank.io/view/a0d5c353-c5b2-4149-842c-429e6363d75b" alt="종료된 이벤트입니다" style="width: 156px; height: 24px;"></div><!----><div class="btns"><button class="ok-btn" style="background-color: rgb(243, 44, 0);"><img src="https://og.kakaobank.io/view/9d351af1-0d0b-4abf-8a34-2b0dc2533a02" alt="대체텍스트" style="width: 35px; height: 24px;"></button></div><div class="clear"></div></div></div></div></section><section data-v-e552aaca="" class="popups popup-already"><div class="pop-inner"><button class="bg"></button><div class="pop-content"><div class="pop-content-inner" style="background-color: rgb(255, 255, 255);"><div class="title"><img src="https://og.kakaobank.io/view/7e954d43-688f-4b01-9082-94aa39dcc515" alt="모임통장 개설을 축하드려요" style="width: 216px; height: 24px;"></div><div class="content"><img src="https://og.kakaobank.io/view/3d852b66-0a70-43e2-b9f9-b66307ac4e57" alt="1명 이상의 모임원이 초대를 수락하면 자동으로 응모가 완료 됩니다." style="width: 164px; height: 63px;"></div><div class="btns"><button class="ok-btn" style="background-color: rgb(243, 44, 0);"><img src="https://og.kakaobank.io/view/ff24bd8b-68d7-4c80-98d9-c55a156e90d8" alt="확인" style="width: 35px; height: 24px;"></button></div><div class="clear"></div></div></div></div></section><section data-v-e552aaca="" class="popups popup-join"><div class="pop-inner"><button class="bg"></button><div class="pop-content"><div class="pop-content-inner" style="background-color: rgb(255, 255, 255);"><div class="title"><img src="https://og.kakaobank.io/view/2b61b66c-3b02-48ea-bfea-cac7ab08d7c9" alt="참여방법" style="width: 68px; height: 24px;"></div><div class="content"><img src="https://og.kakaobank.io/view/27384161-a296-4c0f-849b-27ec8410b357" alt="모임토장 개설하고 모임맴버 1명 이상 초대하면 응모완료" style="width: 171px; height: 63px;"></div><div class="btns"><button class="ok-btn" style="background-color: rgb(243, 44, 0);"><img src="https://og.kakaobank.io/view/01fb05fd-70cd-4017-a735-70b1dae7617f" alt="확인" style="width: 35px; height: 24px;"></button></div><div class="clear"></div></div></div></div></section><section data-v-e552aaca="" class="popups popup-share full"><!----></section>
+    </main>
+
+    
+
+
+</div>
+  
+  <!-- End Google Tag Manager -->
+    <script src="https://og.kakaobank.io/view/edf40da5-5e25-4d3d-9b37-19ae9c94e87a"></script>
+    <script src="https://og.kakaobank.io/view/7b470f05-80b0-493b-8cd5-c93f4bfeff04"></script>
+    <script src="https://og.kakaobank.io/view/627a85c8-09e1-4ace-8d28-e59ec2894890"></script>
+    <script src="https://og.kakaobank.io/view/64518903-38f1-4608-aa8b-7673710b91b0"></script>
+    <script src="https://og.kakaobank.io/view/0c174a73-8741-4fc8-a34d-89e0a9986272"></script>
+
+<script>
+    var isLive = true;
+    /*  */ isLive = true;
+    /*  */
+
+    var trans,
+    machineId = "",
+    headers = {},
+    transState = "",
+    source = '',
+    updateUrl = '';
+
+    machineId = "1779838551572090124";
+
+     // 
+
+    //  
+    source = 'PC'
+    //   
+    // 
+
+</script>
+  <!---->
+  <!---->
+      <script>
+
+
+        (function () {
+          var oneLink = {
+          "default": "https://kakaobank.onelink.me/0qMi/ykl4otds",
+          }
+
+          function getOnelinkParams(_onelink) {
+            var keys = (function (arr) {
+              var obj = {};
+              var splitdata;
+              for (var i = 0, j = arr.length; i < j; i++) {
+                splitdata = arr[i].split('=')
+                if (splitdata[0] && splitdata[1] &&
+                  splitdata[0].indexOf('utm_') == 0 ||
+                  splitdata[0].indexOf('af_') == 0
+                )
+                  obj[splitdata[0]] = splitdata[1]
+              }
+              return obj;
+            }(location.search.replace(/\?/, '').split('&')))
+
+            var keysToQuery = [];
+
+            var queries = Object.keys(keys);
+
+            for (var i = 0, j = queries.length; i < j; i++) {
+              keysToQuery.push(queries[i] + '=' + keys[queries[i]])
+            }
+            return _onelink + (keysToQuery.join('&') ? '?' + keysToQuery.join('&') : '');
+          }
+
+          var setBtns = function () { };
+
+          setBtns = function () {
+            $('.accordion-title').click(function () {
+              var $this = $(this);
+              if($this.hasClass('is-active')) {
+                $this.removeClass('is-active').next('.accordion-content').slideUp();
+              } else {
+                $this.addClass('is-active').next('.accordion-content').slideDown();
+              }
+            })
+
+            $('.share-btns button, .btn-apply.share-btn button').on('click', function (e) {
+              e.preventDefault();
+              $('.popup-to-app').addClass("on")
+            });
+
+            $('.btn-apply a').on('click', function (e) {
+              e.preventDefault();
+              if(source === 'MOBILE'){
+               var onelink = getOnelinkParams(oneLink.default);
+               return window.open(onelink, '_blank');
+              }
+              $('.popup-to-app').addClass("on")
+            });
+
+            $('.popups.popup-to-app .ok-btn').on('click', function (e) {
+               e.preventDefault();
+               if(source === 'MOBILE'){
+                 var onelink = getOnelinkParams(oneLink.default);
+                 return window.open(onelink, '_blank');
+               }
+            });
+
+            $('.popups .ok-btn, .popups .bg').on('click', function (e) {
+              e.preventDefault();
+              $('.popups').removeClass("on");
+            });
+          }
+
+          function init() {
+            setBtns();
+          }
+          init();
+        })();
+
+      </script>
+    <!---->
+  <!---->
+</body>
+</html>
