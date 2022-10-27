@@ -32,8 +32,8 @@ textarea {
 button {
   float: right;
 }
-#name, #email {
-  width: 50%;
+#name, #email, #color, #message {
+  width: 30%;
 }
 .honeypot-field {
   display: none;

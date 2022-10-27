@@ -85,6 +85,7 @@
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
     xhr.send(encoded);
+    var ret = window.location.href = event.html;
   }
   
   function loaded() {
